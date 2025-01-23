@@ -1,7 +1,16 @@
 package com.restuarant.restuarant.mapper;
 
-import org.springframework.stereotype.Component;
+import com.restuarant.restuarant.dtos.UserDTO;
+import com.restuarant.restuarant.entities.UserEntity;
+import org.mapstruct.Mapper;
+import org.mapstruct.factory.Mappers;
 
-@Component
-public class UserMapper {
+@Mapper
+public interface UserMapper {
+
+    UserMapper INSTANCE = Mappers.getMapper(UserMapper.class);
+
+    UserDTO userEntity2DTO(UserEntity userEntity);
+
+    UserEntity userDTO2Entity(UserDTO userDTO);
 }
