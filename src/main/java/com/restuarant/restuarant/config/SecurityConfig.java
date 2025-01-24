@@ -9,7 +9,7 @@ import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.security.web.SecurityFilterChain;
 
 import static org.springframework.security.config.Customizer.withDefaults;
-
+// READ THIS TWO ANNOTATION
 @Configuration
 @EnableWebSecurity
 public class SecurityConfig {

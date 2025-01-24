@@ -1,9 +1,6 @@
 package com.restuarant.restuarant.entities;
 
-import jakarta.persistence.Column;
-import jakarta.persistence.Entity;
-import jakarta.persistence.Id;
-import jakarta.persistence.Table;
+import jakarta.persistence.*;
 import jakarta.validation.constraints.NotNull;
 import lombok.Getter;
 
@@ -15,7 +12,9 @@ import java.io.Serializable;
 @Table(name = "USERS")
 public class UserEntity implements Serializable {
 
+    // READ THE DIFFERENT TYPES OF GENERATIONTYPE
     @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "USER_ID")
     private Long id;
 
