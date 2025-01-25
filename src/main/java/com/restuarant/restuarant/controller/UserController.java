@@ -1,6 +1,6 @@
 package com.restuarant.restuarant.controller;
 
-import com.restuarant.restuarant.dtos.UserDTO;
+import com.restuarant.restuarant.dtos.AdminCredentailDao;
 import com.restuarant.restuarant.service.UserService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
@@ -12,30 +12,30 @@ import org.springframework.web.bind.annotation.*;
 @RequiredArgsConstructor
 public class UserController {
 
-    private final UserService userService;
+  /*  private final UserService userService;
 
     @PostMapping("/register")
-    public ResponseEntity<UserDTO> createUser(@RequestBody UserDTO userDTO) {
-        UserDTO user = userService.registerUser(userDTO);
+    public ResponseEntity<AdminCredentailDao> createUser(@RequestBody AdminCredentailDao userDTO) {
+        AdminCredentailDao user = userService.registerUser(userDTO);
         return new ResponseEntity<>(user, HttpStatus.CREATED);
     }
 
     @PostMapping("/login")
-    public ResponseEntity<UserDTO> loginUser(@RequestBody UserDTO userDTO) {
+    public ResponseEntity<AdminCredentailDao> loginUser(@RequestBody AdminCredentailDao userDTO) {
         return new ResponseEntity<>(userService.loginUser(userDTO.userName(), userDTO.password()), HttpStatus.OK);
     }
-
-    @GetMapping("/{id}")
-    public ResponseEntity<UserDTO> getUser(@PathVariable Long id) {
+*/
+  /*  @GetMapping("/{id}")
+    public ResponseEntity<AdminCredentailDao> getUser(@PathVariable Long id) {
       //TBD
         return null;
     }
 
 
     @GetMapping("/all")
-    public ResponseEntity<UserDTO> getAllUsers() {
+    public ResponseEntity<AdminCredentailDao> getAllUsers() {
         // TBD
         return null;
-    }
+    }*/
 
 }
