@@ -1,8 +1,10 @@
 package com.restuarant.restuarant.userdetails;
 
-import org.springframework.stereotype.Component;
+import jakarta.persistence.Embeddable;
+import jakarta.persistence.Embedded;
 
-@Component
+
+@Embeddable
 public class AdditionalUserDetails {
 
     public String getRefferalCode() {
@@ -22,6 +24,7 @@ public class AdditionalUserDetails {
     }
 
     private String refferalCode;
+
     private String promoCode;
 
 }

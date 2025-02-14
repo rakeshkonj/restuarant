@@ -1,9 +1,15 @@
 package com.restuarant.restuarant.userdetails;
 
+import jakarta.persistence.Embeddable;
+import jakarta.persistence.EmbeddedId;
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
 import org.springframework.stereotype.Component;
 
-@Component
+@Embeddable
 public class Address {
+
+
     private String addressLine1;
     private String addressLine2;
     private String addressLine3;

@@ -1,7 +1,8 @@
 package com.restuarant.restuarant.controller;
+/*
 
 
-import com.restuarant.restuarant.dtos.AdminCredentailDao;
+//import com.restuarant.restuarant.dtos.AdminCredentailDao;
 import com.restuarant.restuarant.userdetails.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -104,4 +105,4 @@ public class Restuarant {
         adminCredential.setPassword(pass);
         return "updated";
     }
-}
+}*/

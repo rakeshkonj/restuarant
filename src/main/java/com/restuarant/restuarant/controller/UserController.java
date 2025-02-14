@@ -1,6 +1,6 @@
 package com.restuarant.restuarant.controller;
 
-import com.restuarant.restuarant.dtos.AdminCredentailDao;
+//import com.restuarant.restuarant.dtos.AdminCredentailDao;
 import com.restuarant.restuarant.service.UserService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;

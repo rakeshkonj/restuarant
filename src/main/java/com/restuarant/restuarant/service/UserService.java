@@ -1,11 +1,8 @@
 package com.restuarant.restuarant.service;
 
-import com.restuarant.restuarant.dtos.AdminCredentailDao;
-import com.restuarant.restuarant.entities.UserEntity;
-import com.restuarant.restuarant.mapper.UserMapper;
-import com.restuarant.restuarant.repository.UserRepository;
+/*import com.restuarant.restuarant.dtos.AdminCredentailDao;
+import com.restuarant.restuarant.repository.UserRepository;*/
 import lombok.RequiredArgsConstructor;
-import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 
 @Service

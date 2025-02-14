@@ -1,7 +1,10 @@
 package com.restuarant.restuarant.userdetails;
-import org.springframework.stereotype.Component;
 
-@Component
+
+import jakarta.persistence.*;
+import org.hibernate.annotations.GenericGenerator;
+
+@Entity
 public class AdminCredential {
     public String getUserID() {
         return userID;
@@ -18,7 +21,8 @@ public class AdminCredential {
     public void setPassword(String password) {
         this.password = password;
     }
-
-    private String userID;
+    @Id
+    @GeneratedValue(generator = "uuid")
+    @GenericGenerator(name = "uuid", strategy = "uuid")    private String userID;
     private String password;
 }
