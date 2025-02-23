@@ -1,15 +1,14 @@
 package com.restuarant.restuarant.userdetails;
 
-public class UserCredential {
-    private String emailId;
-    private String password;
-    public String getEmailId() {
-        return emailId;
-    }
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
 
-    public void setEmailId(String emailId) {
-        this.emailId = emailId;
-    }
+@Entity
+public class UserCredential {
+
+    private String password;
+    @Id
+    private String userID;
 
     public String getPassword() {
         return password;
@@ -19,5 +18,15 @@ public class UserCredential {
         this.password = password;
     }
 
+    public String getUserID() {
+        return userID;
+    }
 
+    public void setUserID(String userID) {
+        this.userID = userID;
+    }
 }
+
+
+
+

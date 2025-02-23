@@ -18,7 +18,7 @@ public class RestuarantApplication {
 		ConfigurableApplicationContext a=SpringApplication.run(RestuarantApplication.class, args);
 //		AdminCredential aa=new AdminCredential();
 //		aa.setPassword("aman@1");
-		UserInformation userInformation =new UserInformation();
+	/*	UserInformation userInformation =new UserInformation();
 		userInformation.setUserID(123L);
 		userInformation.setEmailID("aman@gmail.com");
 		Address address=new Address();
@@ -35,6 +35,7 @@ public class RestuarantApplication {
 		additionalUserDetails.setPromoCode("abc");
 		additionalUserDetails.setRefferalCode("xyz");
 		userInformation.setAdditionalUserDetails(additionalUserDetails);
+		System.out.println(userInformation.toString());
 		//aa.setUserID("Admin-");
 		Configuration configuration=new Configuration();
 		//configuration.configure("/hibernate.cfg.xml");//this is not cumpolsory becuase by deafault our application will search for this "hibernate.cfg.xml"
@@ -49,7 +50,7 @@ public class RestuarantApplication {
 		session.save(userInformation);
 		//System.out.println(student);
 
-		tx.commit();
+		tx.commit();*/
 	}
 
 }

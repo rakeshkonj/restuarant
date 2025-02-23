@@ -1,7 +1,7 @@
 package com.restuarant.restuarant.userdetails;
 
 import jakarta.persistence.Embeddable;
-import jakarta.persistence.Embedded;
+
 
 
 @Embeddable
@@ -27,4 +27,11 @@ public class AdditionalUserDetails {
 
     private String promoCode;
 
+    @Override
+    public String toString() {
+        return "AdditionalUserDetails{" +
+                "refferalCode='" + refferalCode + '\'' +
+                ", promoCode='" + promoCode + '\'' +
+                '}';
+    }
 }

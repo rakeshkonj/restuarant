@@ -1,9 +1,5 @@
 package com.restuarant.restuarant.userdetails;
 import jakarta.persistence.Embeddable;
-import jakarta.persistence.EmbeddedId;
-import jakarta.persistence.Entity;
-import jakarta.persistence.Id;
-import org.springframework.stereotype.Component;
 
 @Embeddable
 public class UserNames {
@@ -35,5 +31,12 @@ public class UserNames {
         this.lastName = lastName;
     }
 
-
+    @Override
+    public String toString() {
+        return "UserNames{" +
+                "firstName='" + firstName + '\'' +
+                ", middleName='" + middleName + '\'' +
+                ", lastName='" + lastName + '\'' +
+                '}';
+    }
 }

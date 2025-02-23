@@ -11,9 +11,10 @@
         <property name="hibernate.connection.password">Superman@1</property>
         <property name="hibernate.connection.url">jdbc:postgresql://localhost:5432/restuarantDatabase</property>
         <property name="connection_pool_size">1</property>
-        <property name="hbm2ddl.auto">create</property>
+        <property name="hbm2ddl.auto">update</property>
         <property name="show_sql">true</property>
         <mapping class="com.restuarant.restuarant.userdetails.AdminCredential"/>
         <mapping class="com.restuarant.restuarant.userdetails.UserInformation"/>
+        <mapping class="com.restuarant.restuarant.userdetails.UserCredential"/>
     </session-factory>
 </hibernate-configuration>

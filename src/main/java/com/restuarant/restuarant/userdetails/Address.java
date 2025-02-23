@@ -1,16 +1,22 @@
 package com.restuarant.restuarant.userdetails;
-
 import jakarta.persistence.Embeddable;
-import jakarta.persistence.EmbeddedId;
-import jakarta.persistence.Entity;
-import jakarta.persistence.Id;
-import org.springframework.stereotype.Component;
+
 
 @Embeddable
 public class Address {
 
 
     private String addressLine1;
+
+    @Override
+    public String toString() {
+        return "Address{" +
+                "addressLine1='" + addressLine1 + '\'' +
+                ", addressLine2='" + addressLine2 + '\'' +
+                ", addressLine3='" + addressLine3 + '\'' +
+                '}';
+    }
+
     private String addressLine2;
     private String addressLine3;
 

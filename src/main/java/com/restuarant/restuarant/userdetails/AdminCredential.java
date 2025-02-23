@@ -10,6 +10,14 @@ public class AdminCredential {
         return userID;
     }
 
+    @Override
+    public String toString() {
+        return "AdminCredential{" +
+                "userID='" + userID + '\'' +
+                ", password='" + password + '\'' +
+                '}';
+    }
+
     public void setUserID(String userID) {
         this.userID = userID;
     }
